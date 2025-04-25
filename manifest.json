@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "CCLI Formatter",
+    "description": "CCLI Formatter",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "ccli.png"
+    },
+    "content_scripts" : [
+        {
+        "matches": ["https://reporting.ccli.com/history/ccl"],
+        "js": ["scripts/historyFormatter.js"],
+        "run_at": "document_end"
+        }
+    ]
+  }
