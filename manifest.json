@@ -9,7 +9,7 @@
     },
     "content_scripts" : [
         {
-        "matches": ["https://reporting.ccli.com/history/ccl"],
+        "matches": ["https://reporting.ccli.com/*"],
         "js": ["scripts/historyFormatter.js"],
         "run_at": "document_end"
         }
